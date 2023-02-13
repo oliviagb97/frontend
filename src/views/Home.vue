@@ -42,7 +42,7 @@ export default {
 <template>
   <div class="container">
     <div class="card card-container">
-      <img id="profile-img" class="profile-img-card" src="@/assets/logo.svg" />
+      <img src="@/parrot.png">
       <p id="profile-name" class="profile-name-card"></p>
       <form class="form-signin" v-on:submit.prevent="login">
         <span id="reauth-email" class="reauth-email"></span>

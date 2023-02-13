@@ -21,19 +21,21 @@ export default {
             }
         }
     },
-    mounted: function () {
-        let productId = this.$route.params.id;
 
-        let direccion = `https://api.escuelajs.co/api/v1/products/${productId}`;
-        axios.get(direccion).then(data => {
-            this.product.id = data.data;
-            this.product.title = data.data.title;
-            this.product.description = data.data.description;
-            this.product.img = data.data.images[0];
-            this.product.price = data.data.price;
-        }
-        );
-    }
+    // AQUI SE TIENE QUE LINKEAR CON BACKEND
+    // mounted: function () {
+    //     let productId = this.$route.params.id;
+
+    //     let direccion = `https://api.escuelajs.co/api/v1/products/${productId}`;
+    //     axios.get(direccion).then(data => {
+    //         this.product.id = data.data;
+    //         this.product.title = data.data.title;
+    //         this.product.description = data.data.description;
+    //         this.product.img = data.data.images[0];
+    //         this.product.price = data.data.price;
+    //     }
+    //     );
+    // }
 }
 </script>
 

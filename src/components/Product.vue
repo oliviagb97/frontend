@@ -31,6 +31,7 @@ export default {
 </template>
 
 <style scoped>
+
 @import url("https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap");
 
 * {

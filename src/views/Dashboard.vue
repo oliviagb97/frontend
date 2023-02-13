@@ -18,14 +18,15 @@ export default {
         Footer,
         Product
     },
-    mounted: function () {
-        let direccion = `https://api.escuelajs.co/api/v1/products?limit=${this.Limit}&offset=${this.Offset}`;
-        axios.get(direccion).then(data => {
-            this.ListaProductos = data.data;
-            console.log(data.data[0].images[0]);
-        }
-        );
-    }
+    // AQUI SE CONECTA LA API DEL BACKEND
+    // mounted: function () {
+    //     let direccion = `https://api.escuelajs.co/api/v1/products?limit=${this.Limit}&offset=${this.Offset}`;
+    //     axios.get(direccion).then(data => {
+    //         this.ListaProductos = data.data;
+    //         console.log(data.data[0].images[0]);
+    //     }
+    //     );
+    // }
 }
 </script>
 
