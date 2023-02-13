@@ -34,10 +34,11 @@ export default {
         <Header />
 
         <div class="container">
-            <h4>Listado de Productos</h4>
+            <h4> Muro </h4>
             <div class="row">
-                <Publicacion v-for="producto in ListaPublicaciones" 
-                :id=producto.id :title="producto.title" :img="producto.images[0]" :key="producto.id"/>
+                <!-- Se conecta con el backend -->
+                <!-- <Publicacion v-for="producto in ListaPublicaciones" 
+                :id=producto.id :title="producto.title" :img="producto.images[0]" :key="producto.id"/> -->
             </div>         
         </div>
         <Footer />
